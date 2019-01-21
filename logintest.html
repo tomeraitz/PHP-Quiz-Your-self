@@ -1,0 +1,26 @@
+<html>
+
+
+<head>
+<meta name="google-signin-client_id" content="824663933852-pciflo2sl7aclthtpano6b9b4t4hqehn.apps.googleusercontent.com">
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>	
+<script>
+function onSignIn(googleUser) {
+	alert("inside sign in");
+var profile = googleUser.getBasicProfile();
+alert('Name: ' + profile.getName());
+alert('Email: ' + profile.getEmail());
+}
+</script>
+</body>
+
+</html>

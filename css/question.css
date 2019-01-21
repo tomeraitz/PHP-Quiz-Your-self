@@ -1,0 +1,58 @@
+.modal-content {
+    background-color: #fefefe;
+	padding: 20px;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+	overflow-x:hidden;
+    overflow-y:auto;
+    max-height:90%;
+}
+h1{
+	color: #00b300;
+	 font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.modal-content::-webkit-scrollbar {
+    width: 12px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(122,153,217)),
+									   color-stop(0.72, rgb(73,125,189)),
+									   color-stop(0.86, rgb(28,58,148)));
+}
+
+.form-control{
+	width:45%;
+	margin-left: 20px;
+	margin-top:20px; 
+	font-size: large;
+	height: 100px;
+	float: left;
+}
+.form-control:hover{
+	background-color:#4286f4;
+	color:white;
+}
+
+@media only screen and (max-width: 860px) {
+
+   .form-control{
+	width:100%;
+     margin-left: 0px;
+	font-size: large;
+	height: 100px;
+	}
+}
+
+​
